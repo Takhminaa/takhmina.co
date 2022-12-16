@@ -18,6 +18,20 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 
+"""=============Swagger docs============="""
+from drf_yasg import openapi
+from drf_yasg.views import get_schema_view
+
+swagger_view = get_schema_view(
+    openapi.Info(
+        title="Blog API",
+        default_version='v1',
+        description="blog API"
+    ),
+    public=True
+)
+"""======================================"""
+
 
 
 
