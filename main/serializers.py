@@ -9,5 +9,5 @@ class PostSerializers(ModelSerializer):
     def to_representation(self, instance:Post):
 
         rep = super().to_representation(instance)
-        rep['author'] = instance.author.username
+        rep['blogger'] = instance.user_id.username
         return rep 
