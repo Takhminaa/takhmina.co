@@ -10,3 +10,4 @@ class Post(models.Model):
     body = models.TextField()
     image = models.ImageField(upload_to='postsimg', null=True)
     created_at = models.DateField(auto_now_add=True)
+
