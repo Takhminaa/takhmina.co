@@ -3,3 +3,4 @@ django_rest_framework
 psycopg2-binary
 python-decouple
 drf-yasg
+pillow
